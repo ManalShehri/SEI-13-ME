@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show</title>
+    <link rel="stylesheet" href="/css/app.css">   
+</head>
+<body>
+    <h2></h2>
+    <div class="card">
+          <img src="<%=data.img %>" alt="Avatar">
+          <div class="card-container">
+            <h4>Name: <b><%=data.name %></b></h4> 
+            <p>Type: <%=data.type %></p> 
+            <p>Classification: <%=data.misc.classification %></p> 
+            <p>Height: <%=data.misc.height %></p> 
+            <p>Weight: <%=data.misc.weight %></p> 
+            <p>Happiness: <%=data.misc.happiness %></p> 
+          </div>
+      </div>
+</body>
+</html>

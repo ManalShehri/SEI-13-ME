@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/company.css">
+    <title>Companies</title>
+</head>
+<body>
+    <h1>All Compaies</h1>
+    <section>
+        <a id='new' href="/companys/new">Add New Company</a>
+    <ul>
+        <% company.forEach(elem =>{ %>
+            <li>Name: <%= elem.name %> </li>
+            <li>Logo: <%= elem.logo %> </li>
+            <li>Address: <%= elem.address %> </li>
+            <li>City: <%= elem.city %> </li>
+            <li>Telephone: <%= elem.telephone %> </li>
+            <hr>
+            <a id="show" href="/company/<%= elem.id%>">Show</a>
+            <a id="edit" href="/company/edit/<%= elem.id%>">Edit</a>
+        <% }) %> 
+    </ul>
+</section>
+</body>
+</html>

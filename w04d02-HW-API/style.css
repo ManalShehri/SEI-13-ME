@@ -1,0 +1,18 @@
+body
+{
+    width: 100%;
+}
+.container
+{
+    display: flex;
+    width: 100%;
+}
+.item 
+{
+    margin: 10px;
+    width: 100%;
+}
+img 
+{
+    width: 100%;
+}

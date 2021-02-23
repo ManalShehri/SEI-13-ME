@@ -1,0 +1,104 @@
+body {
+  width: 85%;
+  margin: auto;
+}
+.bold {
+  font-weight: bold;
+}
+.italics {
+  font-style: italic;
+}
+
+/* header  */
+
+header {
+  width: 100%;
+}
+#header-text{
+  height: 500px;
+  background-image: url('./img/sailboat.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+#page-title{
+  color:#fff;
+  display: flex;
+  flex-direction: column;
+}
+#page-title h1{
+  font-size: 48px;
+  margin: 0;
+
+}
+#page-title h2{
+  font-size: 14px;
+  margin: 0;
+  font-weight: lighter;
+}
+
+/* navebar */
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  background-color: #1d1d1d;
+}
+.navigation {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly ;
+  align-items: center;
+}
+.navigation a {
+  text-decoration: none;
+  color: #c0bfbf;
+  font-size: 13px;
+}
+
+/* main */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#jumbotron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin: 10%;
+  color: #2b241b ;
+  text-align: center;
+}
+#columns{
+  width: 95%;
+  display:flex;
+  margin: auto;
+  justify-content: space-between;
+}
+#columns section{
+  width: 30%;
+}
+#columns section img{
+  width: 100%;
+  color: #2b241b ;
+}
+#banner{
+  width: 95%;
+  margin: auto;
+  height: 200px;
+  display: flex;
+  align-items: center;
+ }
+ footer{
+  width: 100%;
+  display:flex;
+  justify-content: space-evenly;
+  border-top: 0.5px solid lightgray;
+  padding: 10px  0;
+}

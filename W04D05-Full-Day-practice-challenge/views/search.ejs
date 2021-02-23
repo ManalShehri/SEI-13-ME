@@ -1,0 +1,54 @@
+<head>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+
+<div class="home__top">
+
+    <div class="home__top__right search-bar">
+        <form action="/search" method="POST">
+            <input class="search-bar__text" type="text" name="searchValue" />
+            <input class="search-bar__submit" type="submit" />
+        </form>
+    </div>
+    <div class="home__top__left">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+            alt="" srcset="">
+    </div>
+</div>
+
+<div class="home__main">
+<!-- search one  -->
+
+<% users.forEach(user => { %>
+    <div class="home__main__twitt">
+        <div class="home__main__twitt--img">
+            <img src="<%=user.image%>"
+                alt="">
+        </div>
+    
+        <div class="home__main__twitt__right">
+            <h4 class="home__main__twitt__right--h4">
+                <%= user.name %> <span> @<%= user.username %></span> · <span> 1m </span>
+            </h4>
+            <div class="profile__about--follow-2">
+                <!-- add the follow function -->
+              <form action="/follow" method="POST">
+                  <!-- send user id -->
+                  <input type="hidden" name="toFollow" value="<% user %> ">
+               <input type="submit" value="Follow">
+              </form>
+                   
+                
+            </div>
+        </div>
+    </div>
+<% }); %>
+
+
+</div>
+
+
+
+<!-- end of search -->

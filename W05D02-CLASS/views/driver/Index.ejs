@@ -1,0 +1,21 @@
+<h1 class="text-center">All Compaies</h1>
+<div class="center">
+  <a id='new' href="/driver/new" class="btn btn-warning">Add New Driver</a>
+</div>
+<br>
+    <% driver.forEach(elem =>{ %>
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"><%= elem.name %></h5>
+          <p class="card-text">
+            <ul>
+                <li>Age: <%= elem.age %> </li>
+                <li>Address: <%= elem.address %> </li>
+            </ul>
+          </p>
+          <a href="/driver/<%= elem.id%>" class="btn btn-primary">Show</a>
+          <a href="/driver/edit/<%= elem.id%>" class="btn btn-success">Edit</a>
+        </div>
+      </div>
+      <% }) %> 

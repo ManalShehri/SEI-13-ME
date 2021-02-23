@@ -1,0 +1,23 @@
+<h1 class="text-center">All Compaies</h1>
+<div class="center">
+  <a id='new' href="/Companies/new" class="btn btn-warning">Add New Company</a>
+</div>
+<br>
+    <% company.forEach(elem =>{ %>
+
+    <div class="card" style="width: 18rem;">
+        <img src="<%= elem.logo %>" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title"><%= elem.name %></h5>
+          <p class="card-text">
+            <ul>
+                <li>City: <%= elem.city %> </li>
+                <li>Telephone: <%= elem.telephone %> </li>
+                <li>Address: <%= elem.address %> </li>
+            </ul>
+          </p>
+          <a href="/company/<%= elem.id%>" class="btn btn-primary">Show</a>
+          <a href="/company/edit/<%= elem.id%>" class="btn btn-success">Edit</a>
+        </div>
+      </div>
+      <% }) %> 

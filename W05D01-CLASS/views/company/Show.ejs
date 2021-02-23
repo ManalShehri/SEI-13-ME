@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/company.css">
+    <title>Show</title>
+</head>
+<body>
+    <h1><%=company.name%></h1>
+    <h3>Info: </h3>
+    <section>
+        <ul>
+            <li>logo: <%= company.logo %> </li>
+            <li>address: <%= company.address %> </li>
+            <li>city: <%= company.city %> </li>
+            <li>telephone: <%= company.telephone %> </li>
+            <form action="/company/<%= company._id %>?_method=DELETE" method="POST">
+                <input type="submit" value="DELETE" />
+            </form>
+        </ul>
+    </section>
+</body>
+</html>

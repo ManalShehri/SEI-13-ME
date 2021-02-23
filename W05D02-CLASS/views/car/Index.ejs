@@ -1,0 +1,22 @@
+<h1 class="text-center">All Cars</h1>
+<div class="center">
+  <a id='new' href="/Cars/new" class="btn btn-warning">Add New Car</a>
+</div>
+<br>
+    <% car.forEach(elem =>{ %>
+
+    <div class="card" style="width: 18rem;">
+        <img src="<%= elem.image %>" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title"><%= elem.name %></h5>
+          <p class="card-text">
+            <ul>
+                <li>Year: <%= elem.year %> </li>
+                <li>Model: <%= elem.model %> </li>
+            </ul>
+          </p>
+          <a href="/car/<%= elem.id%>" class="btn btn-primary">Show</a>
+          <a href="/car/edit/<%= elem.id%>" class="btn btn-success">Edit</a>
+        </div>
+      </div>
+      <% }) %> 

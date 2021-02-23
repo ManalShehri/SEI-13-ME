@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root">
+    </div>
+    
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script type="text/babel">
+    
+        // WRITE ALL YOUR REACT CODE HERE
+        // DO NOT USE OTHER JAVASCRIPT FILES
+        // DO NOT USE IMPORT OR EXPORT
+        
+        class Main extends React.Component {
+            render() {
+                const todosData = [
+                    {
+                        id: 1,
+                        text: "Take out the trash",
+                        completed: true
+                    },
+                    {
+                        id: 2,
+                        text: "Grocery shopping",
+                        completed: false
+                    },
+                    {
+                        id: 3,
+                        text: "Clean gecko tank",
+                        completed: false
+                    },
+                    {
+                        id: 4,
+                        text: "Mow lawn",
+                        completed: true
+                    },
+                    {
+                        id: 5,
+                        text: "Catch up on Arrested Development",
+                        completed: false
+                    }
+                ]
+
+                function TodoItem(props) {
+                    return (
+                        <div className="todo-item">
+                            <input type="checkbox" checked={props.item.completed}/>
+                            <p>{props.item.text}</p>
+                        </div>
+                    )
+                }
+                    const todoItems = todosData.map(item => <TodoItem key={item.id} item={item}/>)
+                    
+                    return (
+                        <div className="todo-list">
+                            {todoItems}
+                        </div>
+                    )
+               
+            }
+        }
+
+        ReactDOM.render(<Main />, document.getElementById('root'));
+    </script>
+</body>
+</html>

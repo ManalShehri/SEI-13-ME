@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/app.css">   
+</head>
+<body>
+  <h1><a href="/pokemon/New">Add New Pokemon</a></h1>
+  <div class="container">
+    <% data.forEach(ele => { %>
+    <div class="card">
+        <img src="<%=ele.img %>" alt="Avatar" style="width:100%">
+        <div class="card-container">
+          <h4><b><%=ele.name %></b></h4> 
+          <p><%=ele.type %></p> 
+          <h6><a href="/Pokemon/view/<%=ele.id%>">View</a></h6>
+          <h6><a href="/Pokemon/edit/<%=ele.id%>">Edit</a></h6>
+          <h6><a href="/Pokemon/delete/<%=ele.id%>">Delete</a></h6>
+        </div>
+    </div>
+    <%  }); %>
+  </div>
+</body>
+</html>
