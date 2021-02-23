@@ -1,0 +1,371 @@
+/* for all pages - mastermind container */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container>#mastermind 
+{
+    width: 250px;
+    height: 500px;
+    background-color: #a2673d;
+    border: 1px solid black;
+    margin: auto;
+}
+
+/* for all pages - buttons and colors */
+.x 
+{
+    width: 20px;
+    height: 20px;
+    background-color: #f44336;
+    color: #fafafa;
+    text-align: center;
+    border: 1px solid black;
+}
+
+button:hover,button:focus
+{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Home page - logo part */
+.container>#mastermind>#logo 
+{
+    width: 225px;
+    height: 40;
+    border: 3px solid #212121;
+    margin: auto;
+    margin-top: 12px ;
+    border-radius: 6px;
+}
+
+.container>#mastermind>#logo>h1
+{
+    font-size: 22px;
+    text-align: center;
+    color: #212121;
+    padding: 0;
+    margin: 6px;
+}
+
+.container>#mastermind>#img-logo 
+{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 32px;
+}
+
+/* home page - circles part */
+.circle-logo 
+{
+    background: #ffffff;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    border: 1px solid black;
+    display: inline-block;
+    margin:10px;
+}
+
+/* home page - buttons part */
+.container>#mastermind>#new-game,
+.container>#mastermind>#instructions
+{
+    width: 225px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    margin-top: 32px;
+    border: 1px solid #fafafa;
+    border-radius: 4px;
+    color: #f5f5f5 ;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.container>#mastermind>#new-game:hover,
+.container>#mastermind>#instructions:hover,
+.container>#mastermind>#new-game:focus,
+.container>#mastermind>#instructions:focus
+{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.24);
+    transform: scale(1);
+
+}
+
+/* insructions page - insructions box part */
+.container>#mastermind>#insructions-box
+{
+    width: 200px;
+    height: 390px;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.container>#mastermind>#insructions-box>#instruction-header
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.container>#mastermind>#insructions-box>#instruction-header>h2
+{
+    color: #fafafa;
+    margin: 6px;
+    flex-grow: 2;
+}
+
+.container>#mastermind>#insructions-box>#instruction-header>#close-instructions
+{
+    justify-content: flex-end;
+    margin: 12px;
+}
+
+.container>#mastermind>#insructions-box>p ,
+.container>#mastermind>#insructions-box>ul>li
+{
+    color: #fafafa;
+    font-size: 14px;
+    margin: 12px 12px 0 12px;
+    padding: 0;
+}
+
+.container>#mastermind>#insructions-box>ul>li
+{
+    margin: 0 12px 0 0;
+}
+
+/* new_game page */
+.container>#mastermind>.flex-container 
+{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10px 0 ;
+}
+
+.container>#mastermind>.flex-container>.row>#pause-game
+{
+    display: flex;
+    justify-content: center;
+}
+
+#the-secret-code
+{
+    position: relative;
+}
+
+.line
+{
+    display: inline-block;
+    height: 16px;
+    width: 4px;
+    background-color: #f5f5f5;
+    margin: 0 2px;
+}
+
+.row 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 3.5px 10px;
+}
+
+.col 
+{
+    margin: 0 4px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #a56f4b;
+}
+
+.col-1 
+{
+    width: 40px;
+    margin: auto;
+    display: inline-block;
+
+}
+
+.col-2 
+{
+    flex-grow: 5;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.option-circle, .guess-circle
+{
+    background: #452918;
+    opacity: 0.5;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #a56f4b;
+}
+
+.option-circle:hover
+{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.hint-circle 
+{
+    background: #424242;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #616161;
+    display: inline-block;
+    margin: 2px 0px 0px 4px;
+    opacity: 0.5;
+}
+
+/* for all pages */
+.orange 
+{
+    background-color: #ff9800;
+    border: 1px solid #000000;
+    opacity: 1;
+}
+
+.green 
+{
+    background-color: #4caf50;
+    border: 1px solid #000000;
+    opacity: 1;
+}
+
+.white 
+{
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    opacity: 1;
+}
+
+.black 
+{
+    background-color: black;
+    border: 1px solid #000000;
+    opacity: 1;
+}
+
+.purple 
+{
+    background-color: #9c27b0;
+    border: 1px solid #000000;
+    opacity: 1;
+}
+
+.yellow 
+{
+    background-color: #ffeb3b;
+    border: 1px solid #000000;
+    opacity: 1;
+}
+
+.red 
+{
+    background-color: #f44336;
+    border: 1px solid #000000;
+    opacity: 1;
+}
+
+.blue 
+{
+    background-color: #3f51b5;
+    border: 1px solid #000000;
+    opacity: 1;
+}
+
+.brown 
+{
+    background-color: #795548;
+    border: 1px solid #000000;
+    opacity: 1;
+}
+
+/* Modal */
+#popup-message 
+{ 
+    display: none; 
+    position: fixed; 
+    z-index: 2; 
+    padding-top: 200px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: #000000; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+  /* Modal Content */
+#popup-message>#message-content 
+{
+    background-color: #f5f5f5;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border: 3px solid #212121;
+    border-radius: 5px;
+    width: 210px;
+    height: 115px;
+}
+
+#popup-message>#message-content>h5, 
+#popup-message>#message-content>h4
+{
+    margin: 30px 0 10px 0;
+}
+
+#popup-message>#message-content>.popup-button
+{
+    height: 36px ; 
+    width: 92px;
+    margin: 0 5px;
+    color: #f5f5f5;
+    border: 1px solid #fafafa;
+    border-radius:4px ;
+}
+
+#popup-message>#message-content>.x
+{
+    float: right;
+}
+
+/* logo model */
+#game-logo
+{
+    position: absolute;
+    z-index: 1; 
+    top: 0px;
+    width: 183px; 
+    height: 41px;
+    background-color: #f5f5f5; 
+    border: 1px solid #000000;
+}
+
+#game-logo>h2
+{
+    margin: 4px 0;
+    color: #424242;
+    text-align: center;
+} 

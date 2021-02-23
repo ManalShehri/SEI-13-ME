@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="mastermind">
+            <div class="flex-container">
+                <div class="row" id="options">
+                    <div class="option-circle orange"></div>
+                    <div class="option-circle purple"></div>
+                    <div class="option-circle yellow"></div>
+                    <div class="option-circle green"></div>
+                    <div class="option-circle red"></div>
+                    <div class="option-circle blue"></div>               
+                </div> 
+                <div class="row">
+                    <div class="col col-1">
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                    </div>
+                    <div class="col col-2 attemp">
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-1">
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                    </div>
+                    <div class="col col-2 attemp">
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-1">
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                    </div>
+                    <div class="col col-2 attemp">
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-1">
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                    </div>
+                    <div class="col col-2 attemp">
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-1">
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                    </div>
+                    <div class="col col-2 attemp">
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-1">
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                    </div>
+                    <div class="col col-2 attemp">
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-1">
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                    </div>
+                    <div class="col col-2 attemp">
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-1">
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                        <div class="hint-circle"></div>
+                    </div>
+                    <div class="col col-2 attemp">
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                        <div class="guess-circle"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="col col-1 red" id="pause-game" >
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </button>
+                    <div id="the-secret-code" class="col col-2 attemp">
+                        <div class="guess-circle" id='secret1'></div>
+                        <div class="guess-circle" id='secret2'></div>
+                        <div class="guess-circle" id='secret3'></div>
+                        <div class="guess-circle" id='secret4'></div>
+                        <div id="game-logo">
+                            <h2>Mastermind</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-message">
+        <div id="message-content">
+            <button class="x" id="close-window">x</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

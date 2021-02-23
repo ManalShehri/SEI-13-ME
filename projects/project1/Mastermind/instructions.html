@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="mastermind">
+            <div id="logo">
+                <h1>Mastermind</h1>
+            </div>
+            <div id="insructions-box">
+                <div id="instruction-header">
+                    <h2>Instructions:</h2>
+                    <button id="close-instructions" class="x">x</button>
+                </div>
+                <p>Computer will generate a sequence of colours as a secret code. You will try to guess these secret colours in certain number of attemps. You will be given hints after each attemp as follow:</p>
+                    <ul>
+                        <li>If there is any match colour, show white circle.</li>
+                        <li>If there is any match colour and position, show black circle.</li>
+                        <li>If there are no colours, show none..</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
